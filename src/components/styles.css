@@ -1,0 +1,152 @@
+/* header styles */
+.header {
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+.cartitem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px;
+  margin-bottom: 20px;
+}
+
+.cartItemImg {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.cartItemDetail {
+  display: flex;
+  flex: 1;
+  padding: 0 20px;
+  flex-direction: column;
+}
+
+/* Home Page */
+
+.home {
+  display: flex;
+}
+
+.filters {
+  background-color: #343a40;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 10px;
+  height: 86vh;
+}
+
+.filters > span {
+  padding-bottom: 20px;
+}
+
+.title {
+  font-size: 30px;
+}
+
+.productContainer {
+  display: flex;
+  width: 78%;
+  padding: 20px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.products {
+  width: 30%;
+  margin: 10px;
+}
+
+.summary {
+  width: 30%;
+}
+
+/* Media Queries */
+@media (max-width: 771px) {
+  .filters {
+    /* width: 40%;
+    padding: 10px;
+    margin: 5px; */
+    display: none;
+  }
+
+  .filters > span {
+    font-size: 10px;
+  }
+
+  .title {
+    font-size: 18px !important;
+  }
+
+  .productContainer {
+    width: 100%;
+    padding: 0;
+  }
+
+  .search {
+    display: none;
+    width: 20%;
+  }
+
+  .products {
+    width: calc(50% -20px) !important;
+  }
+  .mobileDevice {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 10px;
+  }
+  .navbar-brand > a {
+    display: none;
+  }
+  .navbar-brand {
+    margin-right: -135px !important;
+  }
+  .navbar-nav {
+    width: 20%;
+  }
+  .search.navbar-text > input {
+    width: auto !important;
+  }
+}
+.container_sortbyprice {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container_sortbyprice {
+  padding: 15px;
+  width: 50%;
+}
+@media (max-width: 700px) {
+  .productContainer {
+    width: 100%;
+  }
+  .products {
+    width: calc(50% - 20px) !important;
+  }
+  .card-body {
+    min-height: 222px !important;
+    position: relative;
+  }
+  .card-body > .btn {
+    position: absolute;
+    bottom: 25px;
+    height: 38px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: initial !important;
+  }
+}
